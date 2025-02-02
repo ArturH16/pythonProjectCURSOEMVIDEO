@@ -1,0 +1,9 @@
+termoum = int(input('Digite um termo:'))
+razao= int(input('Digite a razão da PA e mostraremos os 10 primeiros termos:'))
+decimotermo = termoum + (11-1) * razao
+numero = termoum
+contador = 1
+while contador <= 10:
+    print(numero, end=' → ' if contador < 10 else '\n')  
+    numero += razao
+    contador += 1
