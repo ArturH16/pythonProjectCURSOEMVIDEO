@@ -1,3 +1,5 @@
+from rich import inspect
+
 
 #Criando a classe ContaBancaria
 class ContaBancaria:
@@ -40,3 +42,7 @@ c1.depositar(700)
 print(c1.sacar(10700))
 print(c1)
 print(c1.__doc__)
+
+c2 = ContaBancaria(111,"José",540)
+inspect(c2)
+print(c2.__getstate__())
