@@ -1,0 +1,11 @@
+from classe030 import Credencial
+
+
+def main():
+    c = Credencial()
+    c.senha = str(input("Digite a sua senha: "))
+    print(c.senha)
+    c.validar(" Teste123")
+
+if __name__ == "__main__":
+    main()
